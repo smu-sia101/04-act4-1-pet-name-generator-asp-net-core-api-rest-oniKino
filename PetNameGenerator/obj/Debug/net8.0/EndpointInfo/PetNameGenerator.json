@@ -1,0 +1,50 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "PetNameGenerator",
+    "version": "1.0"
+  },
+  "paths": {
+    "/petname/generate": {
+      "post": {
+        "tags": [
+          "RandomName"
+        ],
+        "parameters": [
+          {
+            "name": "animalType",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/AnimalType"
+            }
+          },
+          {
+            "name": "hasLastName",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AnimalType": {
+        "enum": [
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

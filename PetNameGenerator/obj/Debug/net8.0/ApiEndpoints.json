@@ -1,0 +1,23 @@
+[
+  {
+    "ContainingType": "RandomNameGenerator.API.Controllers.RandomNameController",
+    "Method": "Post",
+    "RelativePath": "petname/generate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "animalType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "hasLastName",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
